@@ -21,8 +21,3 @@
     X-XSS-Protection = "1; mode=block"
 
     # COMMENT: Multi-key header rules are expressed with multi-line strings
-    Link = 
-    </base.css>; rel=preload; as=style, \
-    </theme.css>; rel=preload; as=style, \
-    </colors.css>; rel=preload; as=style, \
-    </uikit.css>; rel=preload; as=style
