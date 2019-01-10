@@ -14,15 +14,10 @@
   CECIL_SITE_BASELINE = "Short description (~ 20 characters)"
   CECIL_SITE_DESCRIPTION = "Full description(~ 250 characters)"
   
-[headers]
+[[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
 
     # COMMENT: Multi-key header rules are expressed with multi-line strings
-    Link = 
-    </vendor/base.css>; rel=preload; as=style, \
-    </vendor/theme.css>; rel=preload; as=style, \
-    </vendor/colors.css>; rel=preload; as=style, \
-    </vendor/uikit.css>; rel=preload; as=style
