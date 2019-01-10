@@ -22,7 +22,7 @@
 
     # COMMENT: Multi-key header rules are expressed with multi-line strings
     Link = 
-    </vendor/base.css>; rel=preload; as=style, \
-    </vendor/theme.css>; rel=preload; as=style, \
-    </vendor/colors.css>; rel=preload; as=style, \
-    </vendor/uikit.css>; rel=preload; as=style
+    </base.css>; rel=preload; as=style, \
+    </theme.css>; rel=preload; as=style, \
+    </colors.css>; rel=preload; as=style, \
+    </uikit.css>; rel=preload; as=style
