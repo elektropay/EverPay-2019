@@ -13,7 +13,7 @@
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap.css" class="theme-settings-bootstrap-css">
+    <link href="vendors/bootstrap.css" class="theme-settings-bootstrap-css">
 
     <!-- Custom fonts for this template -->
    <link href="vendors/fonts/ionicons.css" rel="stylesheet" type="text/css">
@@ -41,23 +41,13 @@
       <script src="vendors/js/material-ripple.js"></script>
       <script src="vendors/js/layout-helpers.js"></script>
 
-      <!-- Theme settings -->
-      <!-- This file MUST be included after core stylesheets and layout-helpers.js in the <head> section -->
-      <script src="vendors/js/theme-settings.js"></script>
-      <script>
-        window.themeSettings = new ThemeSettings({
-          cssPath: 'vendors/css/',
-          themesPath: 'vendors/css/'
-        });
-      </script>
-
       <!-- Core scripts -->
-      <script src="vendor/js/pace.js"></script>
+      <script src="vendors/js/pace.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   </head>
 
-  <body id="page-top">
+  <body>
 
   <div class="page-loader">
     <div class="bg-success"></div>
@@ -93,7 +83,7 @@
 
     <div class="swiper-container" id="landing-slider-parallax">
         <!-- Parallax background element -->
-        <div class="landing-slider-parallax-bg" style="background-image:url(img/pages/landing-1-bg.png)" data-swiper-parallax="-23%"></div>
+        <div class="landing-slider-parallax-bg" style="background-image:url("img/pages/landing-1-bg.png")" data-swiper-parallax="-23%"></div>
         <div class="swiper-wrapper">
 
           <div class="swiper-slide jumbotron ui-hero ui-mh-100vh bg-transparent overflow-hidden">
@@ -484,8 +474,8 @@
     <script src="vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- Custom scripts -->
-    <script src="js/everpay.js"></script>
-    <!-- <script src="js/everpay.min.js"></script> -->
+    <script src="js/everpay.min.js"></script>
+    <!-- <script src="js/everpay.js"></script> -->
 
   </body>
 
