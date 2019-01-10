@@ -10,6 +10,19 @@
   command = "chmod +x netlify.sh && bash netlify.sh $DEPLOY_PRIME_URL"
 
 [template.environment]
-  CECIL_SITE_TITLE = "Blog's title"
+  CECIL_SITE_TITLE = "Everpay"
   CECIL_SITE_BASELINE = "Short description (~ 20 characters)"
   CECIL_SITE_DESCRIPTION = "Full description(~ 250 characters)"
+  
+[headers]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+
+    # COMMENT: Multi-key header rules are expressed with multi-line strings
+    Link = 
+    </vendor/base.css>; rel=preload; as=style, \
+    </vendor/theme.css>; rel=preload; as=style, \
+    </vendor/colors.css>; rel=preload; as=style, \
+    </vendor/uikit.css>; rel=preload; as=style
