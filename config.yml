@@ -1,9 +1,9 @@
 site:
-  title: 'Cecil'
-  baseline: "Your blog's butler."
-  baseurl: '/'
+  title: 'EverPay'
+  baseline: "Open Payments"
+  baseurl: 'https://optimistic-goodall-4d2b12.netlify.com'
   canonicalurl: true
-  description: "Starter blog, with Netlify CMS."
+  description: "Everpay provides merchant account and payment solutions for businesses worldwide."
   paginate:
     max: 5
     path: 'page'
